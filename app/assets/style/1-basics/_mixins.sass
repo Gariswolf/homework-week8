@@ -1,0 +1,12 @@
+@mixin rwd($breakpoint)
+    @media ( min-width: $breakpoint )
+        @content
+
+
+@mixin focus()
+    &:focus
+        @content
+
+@mixin active()
+    &:active
+        @content

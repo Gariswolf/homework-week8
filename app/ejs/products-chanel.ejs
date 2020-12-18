@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%- title %></title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+    <%- include('component/nav.ejs') %>
+    <%- include('component/nav-products.ejs') %>
+
+    <div class="container pt-12 pt-lg-20 pb-10 pb-lg-15">
+        <div class="row">
+            <div class="col-lg-8">
+                <ul class="list-unstyled">
+                    <li class="mb-4 mb-lg-7">
+                        <div class="card">
+                            <div class="product-img bg-full mb-7 mb-lg-0" style="background-image: url('assets/images/product1.jpg');"></div>
+                            <div class="card-body d-lg-none">
+                                <h5 class="fz-16 font-weight-bold">CHANEL N°5</h5>
+                                <p class="fz-10 mb-8">
+                                    N°5，女性魅力的極致精髓。散發柔美澄透的乙醛花束香氣。經典傳奇香氛，蘊藏於極簡設計的獨特瓶身。
+                                </p>
+                                <small class="d-block fz-10 mb-3">NT$4,980</small>
+                                <div class="input-group mb-2">
+                                    <select class="custom-select p-4 h-100" id="inputGroupSelect04">
+                                        <option selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary btn-primary color-white hover-color-white py-4" type="button">加入購物車</button>
+                                    </div>
+                                </div>
+                                <a href="#" class="d-flex align-items-center mb-10">
+                                    <span class="material-icons color-primary">favorite</span>
+                                    加入我的收藏
+                                </a>
+                                <dl class="my-10">
+                                    <dt class="mb-2 font-weight-bold">商品購買須知</dt>
+                                    <dd class="mb-5">產品因拍攝關係顏色可能略有差異，實際以廠商出貨為主。 商品情境照為示意用，僅商品主體不包含其他配件，請以規格內容物為主。 D’Perfume 盡可能確保所列商品備貨充足，但偶爾仍會有產品售罄的情況。如您所訂購的商品庫存不足，我們將盡快以電子郵件通知您。任何訂單變動均會在訂單總額與出貨訊息內更新。</dd>
+                                    <dt class="mb-2 font-weight-bold">退換貨須知</dt>
+                                    <dd>依《消費者保護法》的規定，於全站購物皆享有商品到貨【七日猶豫期】（含例假日）之權益。若收到的商品有任何問題，可於猶豫期內申請退貨。</dd>
+                                </dl>
+                                
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mb-4 mb-lg-7">
+                        <div class="row">
+                            <div class="col-lg-6 mb-4 mb-lg-0">
+                                <div class="product-img-large bg-full" style="background-image: url('assets/images/product2.jpg');"></div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="product-img-large bg-full" style="background-image: url('assets/images/product3.jpg');"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product-img-normal bg-full" style="background-image: url('assets/images/product1.jpg');"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 d-none d-lg-block">
+                <div class="card-body">
+                    <h5 class="fz-16 font-weight-bold">CHANEL N°5</h5>
+                    <p class="fz-10 mb-8">
+                        N°5，女性魅力的極致精髓。散發柔美澄透的乙醛花束香氣。經典傳奇香氛，蘊藏於極簡設計的獨特瓶身。
+                    </p>
+                    <small class="d-block fz-10 mb-3">NT$4,980</small>
+                    <div class="input-group mb-2">
+                        <select class="custom-select p-4 h-100" id="inputGroupSelect04">
+                            <option selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary btn-primary color-white hover-color-white py-4" type="button">加入購物車</button>
+                        </div>
+                    </div>
+                    <button type="button" class="btn d-flex align-items-center mb-20" data-toggle="modal" data-target="#addFavorite"><span class="material-icons color-primary">favorite</span>加入我的收藏</button>
+                    <dl class="my-10">
+                        <dt class="mb-2 font-weight-bold">商品購買須知</dt>
+                        <dd class="mb-5">產品因拍攝關係顏色可能略有差異，實際以廠商出貨為主。 商品情境照為示意用，僅商品主體不包含其他配件，請以規格內容物為主。 D’Perfume 盡可能確保所列商品備貨充足，但偶爾仍會有產品售罄的情況。如您所訂購的商品庫存不足，我們將盡快以電子郵件通知您。任何訂單變動均會在訂單總額與出貨訊息內更新。</dd>
+                        <dt class="mb-2 font-weight-bold">退換貨須知</dt>
+                        <dd>依《消費者保護法》的規定，於全站購物皆享有商品到貨【七日猶豫期】（含例假日）之權益。若收到的商品有任何問題，可於猶豫期內申請退貨。</dd>
+                    </dl>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('component/footer.ejs') %>
+    <%- include('component/modal-addFavorite.ejs') %>
+
+  	<script src="./assets/js/vendors.js"></script>
+	<script src="./assets/js/all.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>
