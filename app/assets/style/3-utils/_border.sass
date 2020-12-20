@@ -1,3 +1,7 @@
 .border
     &-thick
         border-width: 2px !important
+@each $infix, $breakpoints in $grid-breakpoints
+    @include rwd($breakpoints)
+        .border-#{$infix}-transparent
+            border-color: $transparent !important
