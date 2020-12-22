@@ -20,15 +20,18 @@ $positions: static, relative, absolute, fixed, sticky, initial
 
 // Custom grid variables
 $grid-breakpoints: ( xss: 0px, xs: 375px, sm: 576px, md: 768px, lg: 992px, xl: 1280px )
-$container-max-widths: ( xs: 345px, sm: 540px, md: 720px, lg: 960px, xl: 1110px )
+$container-max-widths: ( xs: 375px, sm: 540px, md: 720px, lg: 960px, xl: 1110px )
 
 
 // Custom spacing variables
 $spacer: 4px
 $min-spacer-level: 1
-$max-spacer-level: 25
+$max-spacer-level: 60
 $spacers: create-spacer-map()
-
 
 $navbar-light-color:    $secondary
 $navbar-light-toggler-icon-bg:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$primary}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>")
+
+
+$carousel-transition-duration:  1s
+

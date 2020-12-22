@@ -1,7 +1,45 @@
-.border
-    &-thick
-        border-width: 2px !important
+.border-thick
+    border-width: 2px !important
+
+.border-thicker
+    border-width: 3px !important
+            
+.border-x
+    border-left: 1px solid $border-color
+    border-right: 1px solid $border-color
+
+.border-y
+    border-top: 1px solid $border-color
+    border-bottom: 1px solid $border-color
+    
 @each $infix, $breakpoints in $grid-breakpoints
     @include rwd($breakpoints)
         .border-#{$infix}-transparent
             border-color: $transparent !important
+
+        .border-#{$infix}-thick
+            border-width: 2px !important
+
+        .border-#{$infix}-thicker
+            border-width: 3px !important
+
+        .border-#{$infix}-x-0
+            border-left: 0
+            border-right: 0
+        .border-#{$infix}-x
+            border-left: 1px solid $border-color
+            border-right: 1px solid $border-color
+        .border-#{$infix}-y-0
+            border-top: 0
+            border-bottom: 0
+        .border-#{$infix}-y
+            border-top: 1px solid $border-color
+            border-bottom: 1px solid $border-color
+
+        @each $direction in ( top, right, bottom, left )
+            .border-#{$infix}-#{$direction}-0
+                border-#{$direction}: 0
+            .border-#{$infix}-#{$direction}
+                border-#{$direction}: 1px solid $border-color 
+
+
