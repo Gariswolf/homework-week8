@@ -1,4 +1,4 @@
-.search
+.index-search
     @include rwd( 1280px )
         height: 736px
     &-img
@@ -10,7 +10,8 @@
             width: 210px
             height: 288px
         @include rwd( 1280px )
-            width: 530px
+            width: 40%
+            min-width: 530px
             height: 736px
             top: 0
             left: 0
@@ -30,7 +31,7 @@
         object-position: center
         height: 120px
 
-.reservation
+.service
     &-item
         position: relative
         height: 132px
@@ -57,3 +58,7 @@
         left: 0
         background: rgba(0, 0, 0, 0.4)
         
+.sum
+    height: 812px
+    @include rwd( 768px )
+        height: 584px
