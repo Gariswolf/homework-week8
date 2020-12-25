@@ -1,19 +1,23 @@
-.index-search-img
-    object-position: center 40%
-    height: 352px
-    @include rwd( 768px )
-        height: 288px
-    @include rwd( 1280px )
-        width: auto
-        height: 100%
-        top: 0
-        left: -85px
-        z-index: -1
-
+.index
+    &-search-img
+        object-position: center 40%
+        height: 352px
+        @include rwd( 768px )
+            height: 288px
+        @include rwd( 1280px )
+            width: auto
+            height: 100%
+            top: 0
+            left: -85px
+            z-index: -1
+    &-search-more
+        bottom: 83px
+        right: 15px
+        @include rwd( 1280px )
+            bottom: 30px
 .order
     &-link
         position: relative
-        height: 100%
     &-text
         display: flex
         justify-content: center
@@ -34,9 +38,9 @@
     &-img-small
         height: 132px
         @include rwd( 768px )
-            height: 105px
+            height: 103px
         @include rwd( 1280px )
-            height: 175px
+            height: 172px
 
 .summary
     height: 812px
