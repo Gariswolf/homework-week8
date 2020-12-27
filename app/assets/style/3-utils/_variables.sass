@@ -6,9 +6,10 @@ $secondary: #772400
 // Add theme color
 $tertiary:  #D54100
 $transparent: transparent
-$gray:      #DEDEDE
+$gray:      #FAFAFA
 $dark-gray: #00000029
-$theme-colors: ( "tertiary": $tertiary, "transparent": $transparent, "gray": $gray, "dark-gray": $dark-gray )
+$brown-gray: #887676
+$theme-colors: ( "tertiary": $tertiary, "transparent": $transparent, "gray": $gray, "dark-gray": $dark-gray, "brown-gray": $brown-gray )
 
 
 // Responsive font variables
@@ -32,12 +33,13 @@ $min-spacer-level: 1
 $max-spacer-level: 70
 $spacers: create-spacer-map()
 
-
+// Custom Boostrap navbar variables
 $navbar-padding-y: 0
 $navbar-light-color: $secondary
 $navbar-light-toggler-icon-bg:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$primary}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>")
 
-
-// $carousel-transition-duration:  1s
-
-// $pagination-color:  $secondary
+// Custom Bootstrap pagination variables
+$pagination-color:  $secondary
+$pagination-padding-y: 10px
+$pagination-padding-x: 16px
+$pagination-line-height: 1.125

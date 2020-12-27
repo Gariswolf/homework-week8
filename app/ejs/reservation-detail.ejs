@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%- title %></title>
+
+  <!-- Material Icon -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+	
+	<%- include('component/header.ejs') %>
+
+    <div class="container">
+        <div class="row no-gutters flex-column flex-md-row-reverse carousel-reservation-detail margin-fit-container">
+            <div class="col-md-5 col-xl-6 pt-md-15 pt-xl-20">
+                <div id="homestayDetailImage" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner mb-2 mb-xl-3">
+                        <div class="carousel-item active">
+                            <img class="carousel-img rounded" src="assets/images/homestay-3.jpeg" style="object-position: center;">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="carousel-img rounded" src="assets/images/index-5.jpeg">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="carousel-img rounded" src="assets/images/detail-1.jpeg">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="carousel-img rounded" src="assets/images/detail-2.jpeg">
+                        </div>
+                    </div>
+                    <ol class="list-unstyled d-flex justify-content-between justify-content-xl-start">
+                        <li data-target="#homestayDetailImage" data-slide-to="0" class="active mr-xl-2">
+                            <img class="carousel-thumbnail rounded" src="assets/images/homestay-3.jpeg" style="object-position: center;">
+                        </li>
+                        <li data-target="#homestayDetailImage" data-slide-to="1" class="mr-xl-2">
+                            <img class="carousel-thumbnail rounded" src="assets/images/index-5.jpeg">
+                        </li>
+                        <li data-target="#homestayDetailImage" data-slide-to="2" class="mr-xl-2">
+                            <img class="carousel-thumbnail rounded" src="assets/images/detail-1.jpeg">
+                        </li>
+                        <li data-target="#homestayDetailImage" data-slide-to="3">
+                            <img class="carousel-thumbnail rounded" src="assets/images/detail-2.jpeg">
+                        </li>
+                    </ol>
+                </div>
+
+            </div>
+            <div class="col-md-7 col-xl-6 text-secondary py-10 py-md-15 py-xl-20 fix-when-roll position-xl-fixed">
+                <h2 class="d-flex align-items-center font-weight-bold mb-4">
+                    毛孩好家
+                    <div class="d-flex align-items-center ml-4 fz-10">
+                        <%- include('component/star.ejs') %>    
+                    </div>
+                </h2>
+                <p class="font-weight-bold mb-3 mb-xl-2 fz-10 fz-xl-12">給予毛孩最舒適的環境是我們的職責！</p>
+                <p class="mb-7 mb-xl-15">已提供 52 筆服務、並獲得 30 個評價</p>
+                <h3 class="fz-10 font-weight-bold mb-3 mb-xl-4">服務內容</h3>
+                <ul class="list-unstyled mb-7 mb-xl-10">
+                    <li class="mb-2">寄宿 NT$ 450 /晚</li>
+                    <li class="mb-2">美容洗澡 NT$ 500 （含剪指甲、剃腳底毛、清耳朵<span class="d-block text-tertiary fz-7">個性貓另加價</span></li>
+                    <li>到府保姆 NT$ 550 /晚</li>
+                </ul>
+                <ul class="list-unstyled mb-7 mb-xl-15">
+                    <li>
+                        <a href="#" class="d-flex align-items-center">
+                            <span class="material-icons fz-10 mr-2">place</span>
+                            高雄市鹽埕區七賢三路123號
+                        </a>
+                    </li>
+                    <li class="pl-7">服務區域：高雄市 全區</li>
+                </ul>
+                <ul class="list-unstyled row">
+                    <li class="col-6 col-md-5 col-xl-4">
+                        <a href="#" class="btn border-tertiary text-tertiary w-100 py-2 fz-10">聯繫</a>
+                    </li>
+                    <li class="col-6 col-md-5 col-xl-6">
+                        <a href="#" class="btn btn-tertiary w-100 py-2 fz-10">預約</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row no-gutters justify-content-xl-end pb-10 pb-md-15 pb-xl-20 margin-fit-container">
+            <div class="col-md-7 col-xl-6 text-secondary">
+                <ul class="list-unstyled">
+                    <li>
+                        <h4 class="font-weight-bold mb-3">關於</h3>
+                        <p class="fz-xl-10 mb-5 mb-md-7 mb-xl-10">
+                            家中有5隻貓寶貝，對貓咪有瘋狂的熱愛 。 目前已經照顧超過30位狗狗貓咪朋友！對於我來說，能夠與你們相遇都是緣分！
+                        </p>
+                    </li>
+                    <li>
+                        <h4 class="font-weight-bold mb-3">經歷</h3>
+                        <p class="fz-xl-10 mb-5 mb-md-7 mb-xl-10">
+                            曾接手過數次奶貓，照顧後送養成功，目前都是健健康康的毛孩。
+                        </p>
+                    </li>
+                    <li>
+                        <h4 class="font-weight-bold mb-3">技能證照</h3>
+                        <p class="fz-xl-10 mb-5 mb-md-7 mb-xl-10">
+                            寵物美容丙級技術證
+                        </p>
+                    </li>
+                    <li>
+                        <h4 class="font-weight-bold mb-3">提供</h3>
+                        <p class="fz-xl-10 mb-5 mb-md-7 mb-xl-10">
+                            貓砂盆、罐頭、乾飼料
+                        </p>
+                    </li>
+                    <li>
+                        <h4 class="font-weight-bold mb-3">毛孩活動範圍</h3>
+                        <p class="fz-xl-10 mb-5 mb-md-7 mb-xl-10">
+                            想去的任何地方
+                        </p>
+                    </li>
+                    <li>
+                        <h4 class="font-weight-bold mb-3">服務地區</h3>
+                        <p class="fz-xl-10 mb-5 mb-md-7 mb-xl-10">
+                            高雄市
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row no-gutters justify-content-xl-end pb-10 pb-md-15 pb-xl-20 margin-fit-container">
+            <div class="col-xl-6">
+                <h2 class="fz-14 mb-6 font-weight-bold">飼主評論（30)</h2>
+                <ul class="list-unstyled row mb-n3">
+                    <% for (var i =1; i <= comment_number;  i++ ) { %>
+                        <li class="col-md-6 mb-5">
+                            <div class="card card-comment">
+                                <img class="card-img-top" src="assets/images/person-<%= i+3 %>.png">
+                                <div class="card-body">
+                                    <h5 class="card-title"><%= comment_name[i-1] %><span class="text-brown-gray fz-7 ml-2"><%= comment_date[i-1] %></span></h5>
+                                    <div class="d-flex align-items-center">
+                                        <%- include('component/star.ejs') %>
+                                    </div>
+                                    <p class="card-text"><%= comment_content[i-1] %></p>
+                                </div>
+                              </div>
+                        </li>
+                    <% } %>
+                </ul>
+                <a href="#" class="text-right text-secondary fz-10">查看更多</a>
+            </div>
+        </div>
+
+        <div class="row no-gutters justify-content-xl-end pb-15 pb-xl-20 margin-fit-container">
+            <div class="col-xl-6">
+                <h2 class="fz-14 text-secondary d-flex align-items-center font-weight-bold mb-6">其他<a href="#" class="text-tertiary mx-1">高雄市</a> <a href="#" class="text-tertiary mx-1">寄宿</a> 的寵物保姆</h2>
+                <%- include('component/card-homestay-small.ejs') %>
+            </div>
+        </div>
+    </div>
+
+	<%- include('component/contact.ejs') %>
+
+	<%- include('component/footer.ejs') %>
+	
+
+	<!-- Bootstrap required JS -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" `grity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	
+	<!-- AOS Required JS & Initialize -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+	
+	<!-- Custom JS -->
+	<script src="./assets/js/vendors.js"></script>
+	<script src="./assets/js/all.js"></script>
+</body>
+
+</html>

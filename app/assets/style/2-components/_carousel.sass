@@ -1,26 +1,34 @@
-.carousel-item
-    color: $secondary
-    .card
-        position: relative
-        height: 100%
-    .card-body
-        padding-top: 70px
-        padding-right: 13px
-        padding-bottom: 28px
-        padding-left: 13px
-        z-index: 1
-    .card-title
-        margin-bottom: 4px
-        font-weight: bold
-    .card-text
-        margin-bottom: 12px
+.carousel-index
+    .carousel-item
+        color: $secondary
 
-.carousel-img
-    position: absolute
-    top: 0
-    width: 100%
-    height: 120px
+    .carousel-img
+        position: absolute
+        top: 0
+        width: 100%
+        height: 120px
 
-.carousel-next
-    top: 40%
-    right: -22px
+    .carousel-next
+        top: 40%
+        right: -22px
+
+.carousel-reservation-detail
+    .carousel-img
+        width: 100%
+        object-fit: cover
+        height: 282px
+        @include rwd( 768px )
+            height: 221px
+        @include rwd( 1280px )
+            height: 440px
+    
+    .carousel-thumbnail
+        object-fit: cover
+        width: 81px
+        height: 81px
+        @include rwd( 768px )
+            width: 63px
+            height: 63px
+        @include rwd( 1280px )
+            width: 96px
+            height: 96px

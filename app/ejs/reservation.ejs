@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%- title %></title>
+
+  <!-- Material Icon -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+	
+	<%- include('component/header.ejs') %>
+
+    <div class=" position-relative position-md-initial">
+        <div class="container pb-3 py-md-15 pt-xl-16 pb-xl-14">
+            <div class="row no-gutters flex-column flex-md-row-reverse">
+                <div class="col-md-7 reservation-header-img position-static mb-3 mb-md-0">
+                    <img src="assets/images/homestay-1.png" class="wh-full img-fit position-absolute position-md-initial">
+                </div>
+                <div class="col-md-5 d-flex flex-column justify-content-center align-items-center align-items-md-start">
+                    <h2 class="text-secondary font-weight-bold fz-14 fz-md-20">寵物寄宿</h2>
+                    <p class="text-secondary font-weight-bold fz-10 fz-md-12">給您的毛孩最舒適的環境</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-primary">
+        <div class="container py-4">
+            <ul class="list-unstyled row no-gutters">
+                <li class="col-3 col-md-2 col-xl-1 mr-4 mr-md-2 mb-2 mb-md-0">
+                    <div class="input-group">
+                        <select class="custom-select" id="inputGroupSelect01">
+                          <option hidden>貓</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="col-6 col-md-3 col-xl-2 mr-md-2 mb-2 mb-md-0">
+                    <div class="input-group">
+                        <select class="custom-select" id="inputGroupSelect01">
+                          <option selected>高雄市</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="col-md-6 col-xl-4">
+                    <ul class="list-unstyled row no-gutters">
+                        <li class="col-5 mr-4 mr-md-0">
+                            <div class="input-group">
+                                <select class="custom-select" id="inputGroupSelect01">
+                                  <option selected>2020-11-20</option>
+                                  <option value="1">One</option>
+                                  <option value="2">Two</option>
+                                  <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="col-auto py-2 px-md-2 d-none d-md-flex align-items-center">至</li>
+                        <li class="col-5">
+                            <div class="input-group">
+                                <select class="custom-select" id="inputGroupSelect01">
+                                  <option selected>2020-11-21</option>
+                                  <option value="1">One</option>
+                                  <option value="2">Two</option>
+                                  <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+	<div class="container pt-15 pb-10 pb-md-15 py-xl-20">
+		<h2 class="font-weight-bold text-secondary mb-3">本月熱門寄宿</h3>
+        <%- include('component/carousel.ejs') %>
+	</div>
+
+    <%- include('component/card-homestay.ejs') %>
+
+    <div class="container mb-15 mb-xl-20">
+        <%- include('component/pagination.ejs') %>
+    </div>
+
+	<%- include('component/contact.ejs') %>
+
+	<%- include('component/footer.ejs') %>
+	
+
+	<!-- Bootstrap required JS -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" `grity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	
+	<!-- AOS Required JS & Initialize -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+	
+	<!-- Custom JS -->
+	<script src="./assets/js/vendors.js"></script>
+	<script src="./assets/js/all.js"></script>
+</body>
+
+</html>
