@@ -25,7 +25,7 @@
 			<div class="collapse navbar-collapse">
 			  <ul class="navbar-nav ml-auto font-weight-bold">
 				<li class="nav-item ml-md-10">
-					<a class="nav-link" href="#">預約服務</a>
+					<a class="nav-link" href="reservation.html">預約服務</a>
 				</li>
 				<li class="nav-item ml-md-10">
 					<a class="nav-link" href="#">成為寵物保姆</a>
@@ -351,8 +351,8 @@
                     <p class="card-text">寄宿、美容洗澡、到府保姆</p>
                 </div>
                 <div class="d-flex">
-                    <a href="#" class="btn text-secondary text-center w-50 py-3">聯繫</a>
-                    <a href="reservation-detail.html" class="btn text-tertiary text-center w-50 py-3">預約</a>
+                    <a href="reservation-detail.html" class="btn text-secondary text-center w-50 py-3">聯繫</a>
+                    <a class="btn text-tertiary text-center w-50 py-3" data-toggle="modal" data-target="#modalReservation">預約</a>
                 </div>
             </div>
         </li>
@@ -378,8 +378,8 @@
                     <p class="card-text">寄宿、美容洗澡、到府保姆</p>
                 </div>
                 <div class="d-flex">
-                    <a href="#" class="btn text-secondary text-center w-50 py-3">聯繫</a>
-                    <a href="reservation-detail.html" class="btn text-tertiary text-center w-50 py-3">預約</a>
+                    <a href="reservation-detail.html" class="btn text-secondary text-center w-50 py-3">聯繫</a>
+                    <a class="btn text-tertiary text-center w-50 py-3" data-toggle="modal" data-target="#modalReservation">預約</a>
                 </div>
             </div>
         </li>
@@ -405,8 +405,8 @@
                     <p class="card-text">寄宿、美容洗澡</p>
                 </div>
                 <div class="d-flex">
-                    <a href="#" class="btn text-secondary text-center w-50 py-3">聯繫</a>
-                    <a href="reservation-detail.html" class="btn text-tertiary text-center w-50 py-3">預約</a>
+                    <a href="reservation-detail.html" class="btn text-secondary text-center w-50 py-3">聯繫</a>
+                    <a class="btn text-tertiary text-center w-50 py-3" data-toggle="modal" data-target="#modalReservation">預約</a>
                 </div>
             </div>
         </li>
@@ -432,8 +432,8 @@
                     <p class="card-text">寄宿、美容洗澡、到府保姆</p>
                 </div>
                 <div class="d-flex">
-                    <a href="#" class="btn text-secondary text-center w-50 py-3">聯繫</a>
-                    <a href="reservation-detail.html" class="btn text-tertiary text-center w-50 py-3">預約</a>
+                    <a href="reservation-detail.html" class="btn text-secondary text-center w-50 py-3">聯繫</a>
+                    <a class="btn text-tertiary text-center w-50 py-3" data-toggle="modal" data-target="#modalReservation">預約</a>
                 </div>
             </div>
         </li>
@@ -459,8 +459,8 @@
                     <p class="card-text">寄宿、到府保姆、寵物行為訓練</p>
                 </div>
                 <div class="d-flex">
-                    <a href="#" class="btn text-secondary text-center w-50 py-3">聯繫</a>
-                    <a href="reservation-detail.html" class="btn text-tertiary text-center w-50 py-3">預約</a>
+                    <a href="reservation-detail.html" class="btn text-secondary text-center w-50 py-3">聯繫</a>
+                    <a class="btn text-tertiary text-center w-50 py-3" data-toggle="modal" data-target="#modalReservation">預約</a>
                 </div>
             </div>
         </li>
@@ -486,8 +486,8 @@
                     <p class="card-text">寄宿、寵物行為訓練</p>
                 </div>
                 <div class="d-flex">
-                    <a href="#" class="btn text-secondary text-center w-50 py-3">聯繫</a>
-                    <a href="reservation-detail.html" class="btn text-tertiary text-center w-50 py-3">預約</a>
+                    <a href="reservation-detail.html" class="btn text-secondary text-center w-50 py-3">聯繫</a>
+                    <a class="btn text-tertiary text-center w-50 py-3" data-toggle="modal" data-target="#modalReservation">預約</a>
                 </div>
             </div>
         </li>
@@ -569,6 +569,161 @@
 </footer>
 
 	
+    <div class="modal modal-reservation fade" id="modalReservation" tabindex="-1" role="dialog" aria-labelledby="modalReservationLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <ul class="list-unstyled reservation-flow text-center d-md-none pb-1">
+                <li class="flex-grow-1 py-2 border-top border-tertiary border-thick">
+                    預約項目
+                </li>
+                <li class="flex-grow-1 py-2 border-top border-tertiary border-thick">
+                    預約資料
+                </li>
+                <li class="flex-grow-1 py-2 border-top border-tertiary border-thick">
+                    付款資訊
+                </li>
+            </ul>
+            <div class="modal-body d-lg-flex flex-lg-row-reverse justify-content-lg-between mb-9 mb-md-18">
+                <h2 class="modal-title mb-3 mb-md-6 d-lg-none" id="modalReservationLabel">預約項目</h2>
+                <div class="d-flex flex-md-column mb-6 mb-md-5">
+                    <img src="assets/images/homestay-3.jpeg" class="modal-img mr-3 mr-md-7 mr-lg-0 rounded">
+                    <ul class="list-unstyled">
+                        <li class="d-md-flex align-items-md-center mb-md-2">
+                            <h3 class="fz-10 font-weight-bold text-secondary mr-md-2">毛孩好家</h3>
+                            
+    <span class="material-icons text-primary mr-1">star</span>
+
+    <span class="material-icons text-primary mr-1">star</span>
+
+    <span class="material-icons text-primary mr-1">star</span>
+
+    <span class="material-icons text-primary mr-1">star</span>
+
+    <span class="material-icons text-primary mr-1">star</span>
+
+                        </li>
+                        <li class="d-flex align-items-stretch">
+                            <span class="material-icons text-tertiary mr-2 mr-md-3"> place</span>
+                            <p class="text-secondary">高雄市苓雅區、新興區、前鎮區</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="modal-title mb-lg-8 d-none d-lg-block" id="modalReservationLabel">預約項目</h2>
+                    <ul class="list-unstyled d-flex justify-content-between mb-6 mb-md-7">
+                        <li class="modal-icon-service shadow mr-1 mr-md-3">
+                            <span class="material-icons selected">house</span>
+                            寄宿
+                        </li>
+                        <li class="modal-icon-service shadow mr-1 mr-md-3">
+                            <span class="material-icons selected">wash</span>
+                            美容
+                        </li>
+                        <li class="modal-icon-service shadow mr-1 mr-md-3">
+                            <span class="material-icons selected">roofing</span>
+                            到府保姆
+                        </li>
+                        <li class="modal-icon-service shadow">
+                            <span class="material-icons selected">directions_walk</span>
+                            遛狗保姆
+                        </li>
+                    </ul>
+                    <form>
+                        <div class="form-group mb-5">
+                            <h4 class="fz-8 mb-1">選擇日期</h4>
+                            <div class="row no-gutters">
+                                <div class="col-9 col-md-5">
+                                    <select class="custom-select">
+                                        <option selected>2020-11-20</option>
+                                        <option value="20201121">2020-11-21</option>
+                                        <option value="20201122">2020-11-22</option>
+                                        <option value="20201123">2020-11-23</option>
+                                    </select>
+                                </div>
+                                <div class="col-3 d-flex align-items-center">
+                                    <span class="px-2">至</span>
+                                </div>
+                                <div class="col-9 col-md-5">
+                                    <select class="custom-select">
+                                        <option selected>2020-11-21</option>
+                                        <option value="20201122">2020-11-22</option>
+                                        <option value="20201123">2020-11-23</option>
+                                        <option value="20201124">2020-11-24</option>
+                                    </select>
+                                </div>
+                                <div class="col-3 d-flex align-items-center">
+                                    <span class="px-2">共一晚</span>
+                                </div>
+                            </div>   
+                        </div>
+                        <ul class="list-unstyled form-group row">
+                            <li class="col-4 col-md-3">
+                                <label for="quantities">毛孩數量</label>
+                                <select class="custom-select" id="quantities">
+                                    <option value="1" selected>一隻</option>
+                                    <option value="2">兩隻</option>
+                                    <option value="3">三隻</option>
+                                    <option value="4">四隻</option>
+                                </select>
+                            </li>
+                            <li class="col-4 col-md-4">
+                                <label for="species">您的毛孩是</label>
+                                <select class="custom-select" id="species">
+                                    <option value="cat" selected>貓</option>
+                                    <option value="dog">狗</option>
+                                </select>
+                            </li>
+                            <li class="col-4 col-md-4">
+                                <label for="age">年齡</label>
+                                <select class="custom-select" id="age">
+                                    <option value="1" selected>1歲</option>
+                                    <option value="2">兩歲</option>
+                                    <option value="3">三歲</option>
+                                    <option value="4">四歲</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+            <div class="d-xl-flex justify-content-between">
+                <ul class="flex-grow-1 list-unstyled reservation-flow text-center mb-md-9 mb-xl-0 mr-xl-7 d-none d-md-flex">
+                    <li class="flex-grow-1 py-2 border-top border-tertiary border-thick">
+                        預約項目
+                    </li>
+                    <li class="flex-grow-1 py-2 border-top border-tertiary border-thick">
+                        預約資料
+                    </li>
+                    <li class="flex-grow-1 py-2 border-top border-tertiary border-thick">
+                        付款資訊
+                    </li>
+                </ul>
+                <div class="d-md-flex justify-content-md-end">
+                    <button type="button" class="btn w-100 d-md-none text-">返回</button>
+                    <button type="button" class="btn btn-tertiary modal-btn-next" data-dismiss="modal" data-toggle="modal" data-target="#reservationSuccess">下一步</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+<div class="modal fade" id="reservationSuccess" tabindex="-1" role="dialog" aria-labelledby="reservationSuccessLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content py-52 py-md-73 py-xl-41">
+            <div class="modal-body d-flex flex-column justify-content-center align-items-center">
+                <span class="material-icons fz-40 text-primary mb-4">pets</span>
+                <h2 class="fz-12 font-weight-bold text-secondary mb-3">預約成功</h2>
+                <p class="text-secondary mb-4 mb-md-10">您可以在會員頁找到您的預約資料並修改或取消預約。</p>
+                <div class="row no-gutters justify-content-center align-self-stretch">
+                    <div class="col-12 col-md-6">
+                        <a href="member.html" class="btn btn-tertiary py-2 w-100">前往會員頁</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 	<!-- Bootstrap required JS -->
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" `grity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
