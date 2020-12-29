@@ -32455,14 +32455,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
     .modal-reservation .modal-content {
       padding: 60px 32px 48px 32px; } }
 
-.modal-reservation .modal-body {
-  padding: 0; }
-
-.modal-reservation .modal-title {
-  font-size: 24px;
-  font-weight: bold;
-  color: #772400; }
-
 .modal-reservation .modal-img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -32491,6 +32483,9 @@ h1, h2, h3, h4, h5, h6, p, ul {
       top: -4.5px;
       left: 50%;
       z-index: 1; }
+  .reservation-flow .current {
+    font-weight: 900;
+    color: #000; }
 
 .modal-icon-service {
   display: -webkit-box;
@@ -32509,6 +32504,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
   color: #888888;
   border: 3px solid transparent;
   border-radius: 4px;
+  cursor: pointer;
   width: 72px;
   height: 72px; }
   @media (min-width: 768px) {
@@ -32520,8 +32516,10 @@ h1, h2, h3, h4, h5, h6, p, ul {
     @media (min-width: 768px) {
       .modal-icon-service .material-icons {
         font-size: 37px; } }
-  .modal-icon-service:hover {
+  .modal-icon-service:hover, .modal-icon-service .selected {
     border-color: #D54100; }
+    .modal-icon-service:hover .material-icons, .modal-icon-service .selected .material-icons {
+      color: #F8B52E; }
 
 .modal-btn-next {
   width: 100%; }
