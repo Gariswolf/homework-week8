@@ -1,0 +1,76 @@
+<div class="modal modal-reservation fade" id="modalReservationInfo" tabindex="-1" role="dialog" aria-labelledby="modalReservationInfoLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <ul class="list-unstyled reservation-flow text-center d-md-none pb-1">
+                <li class="flex-grow-1 py-2 border-top border-tertiary border-thick">
+                    預約項目
+                </li>
+                <li class="flex-grow-1 py-2 border-top border-tertiary border-thick current">
+                    預約資料
+                </li>
+                <li class="flex-grow-1 py-2 border-top border-tertiary border-thick">
+                    付款資訊
+                </li>
+            </ul>
+            <div class="modal-body d-lg-flex flex-lg-row-reverse justify-content-lg-between mb-9 mb-md-18 p-0">
+                <h2 class="mb-3 mb-md-6 d-lg-none fz-12 font-weight-bold color-secondary" id="modalReservationInfoLabel">預約資料</h2>
+                <div class="d-flex flex-lg-column mb-6 mb-md-5">
+                    <img src="assets/images/homestay-3.jpeg" class="modal-img mb-md-2 mr-3 mr-md-7 mr-lg-0 rounded">
+                    <ul class="list-unstyled d-flex flex-column justify-content-center">
+                        <li class="d-md-flex align-items-md-center mb-md-2">
+                            <h3 class="fz-10 font-weight-bold text-secondary mr-md-2">毛孩好家</h3>
+                            <%- include('star.ejs') %>
+                        </li>
+                        <li class="d-flex align-items-stretch">
+                            <span class="material-icons text-tertiary mr-2 mr-md-3"> place</span>
+                            <p class="text-secondary">高雄市苓雅區、新興區、前鎮區</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex-grow-1">
+                    <h2 class="mb-lg-8 d-none d-lg-block fz-12 font-weight-bold color-secondary" id="modalReservationInfoLabel">預約資料</h2>
+                    <div class="row no-gutters w-100">
+                        <div class="col-md-6">
+                            <form>
+                                <div class="form-group mb-5">
+                                    <label for="petName" class="mb-1">毛孩姓名</label>
+                                    <input type="text" class="form-control" id="petName" aria-describedby="petName" placeholder="請輸入毛孩姓名">
+                                </div>
+                                <div class="form-group mb-5">
+                                    <label for="owerName" class="mb-1">飼主姓名</label>
+                                    <input type="text" class="form-control" id="owerName" aria-describedby="owerName" placeholder="請輸入飼主姓名">
+                                </div>
+                                <div class="form-group mb-5">
+                                    <label for="mail" class="mb-1">Email</label>
+                                    <input type="mail" class="form-control" id="mail" aria-describedby="petName" placeholder="example@gmail.com">
+                                </div>
+                                <div class="form-group mb-5">
+                                    <label for="petName" class="mb-1">聯絡電話</label>
+                                    <input type="tel" class="form-control" id="petName" aria-describedby="petName" placeholder="0912-345-678">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="d-xl-flex justify-content-between">
+                <ul class="flex-grow-1 list-unstyled reservation-flow text-center mb-md-9 mb-xl-0 mr-xl-7 d-none d-md-flex text-black">
+                    <li class="flex-grow-1 py-2 border-top border-tertiary border-thick">
+                        預約項目
+                    </li>
+                    <li class="flex-grow-1 py-2 border-top border-tertiary border-thick current">
+                        預約資料
+                    </li>
+                    <li class="flex-grow-1 py-2 border-top border-tertiary border-thick">
+                        付款資訊
+                    </li>
+                </ul>
+                <div class="d-md-flex justify-content-md-end">
+                    <button type="button" class="btn w-100 d-md-none text-">返回</button>
+                    <button type="button" class="btn btn-tertiary modal-btn-next" data-dismiss="modal" data-toggle="modal" data-target="#modalReservationPayment">下一步</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>

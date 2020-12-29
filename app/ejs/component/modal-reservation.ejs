@@ -2,7 +2,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <ul class="list-unstyled reservation-flow text-center d-md-none pb-1">
-                <li class="flex-grow-1 py-2 border-top border-tertiary border-thick">
+                <li class="flex-grow-1 py-2 border-top border-tertiary border-thick current">
                     預約項目
                 </li>
                 <li class="flex-grow-1 py-2 border-top border-tertiary border-thick">
@@ -12,10 +12,10 @@
                     付款資訊
                 </li>
             </ul>
-            <div class="modal-body d-lg-flex flex-lg-row-reverse justify-content-lg-between mb-9 mb-md-18">
-                <h2 class="modal-title mb-3 mb-md-6 d-lg-none" id="modalReservationLabel">預約項目</h2>
+            <div class="modal-body d-lg-flex flex-lg-row-reverse justify-content-lg-between mb-9 mb-md-18 p-0">
+                <h2 class="mb-3 mb-md-6 d-lg-none fz-12 font-weight-bold color-secondary" id="modalReservationLabel">預約項目</h2>
                 <div class="d-flex flex-md-column mb-6 mb-md-5">
-                    <img src="assets/images/homestay-3.jpeg" class="modal-img mr-3 mr-md-7 mr-lg-0 rounded">
+                    <img src="assets/images/homestay-3.jpeg" class="modal-img mb-md-2 mr-3 mr-md-7 mr-lg-0 rounded">
                     <ul class="list-unstyled">
                         <li class="d-md-flex align-items-md-center mb-md-2">
                             <h3 class="fz-10 font-weight-bold text-secondary mr-md-2">毛孩好家</h3>
@@ -28,22 +28,22 @@
                     </ul>
                 </div>
                 <div>
-                    <h2 class="modal-title mb-lg-8 d-none d-lg-block" id="modalReservationLabel">預約項目</h2>
+                    <h2 class="mb-lg-8 d-none d-lg-block fz-12 font-weight-bold color-secondary" id="modalReservationLabel">預約項目</h2>
                     <ul class="list-unstyled d-flex justify-content-between mb-6 mb-md-7">
-                        <li class="modal-icon-service shadow mr-1 mr-md-3">
-                            <span class="material-icons selected">house</span>
+                        <li class="modal-icon-service shadow mr-1 mr-md-3 selected">
+                            <span class="material-icons mb-2">house</span>
                             寄宿
                         </li>
                         <li class="modal-icon-service shadow mr-1 mr-md-3">
-                            <span class="material-icons selected">wash</span>
+                            <span class="material-icons mb-2">wash</span>
                             美容
                         </li>
                         <li class="modal-icon-service shadow mr-1 mr-md-3">
-                            <span class="material-icons selected">roofing</span>
+                            <span class="material-icons mb-2">roofing</span>
                             到府保姆
                         </li>
                         <li class="modal-icon-service shadow">
-                            <span class="material-icons selected">directions_walk</span>
+                            <span class="material-icons mb-2">directions_walk</span>
                             遛狗保姆
                         </li>
                     </ul>
@@ -51,7 +51,7 @@
                         <div class="form-group mb-5">
                             <h4 class="fz-8 mb-1">選擇日期</h4>
                             <div class="row no-gutters">
-                                <div class="col-9 col-md-5">
+                                <div class="col-9 col-md-4 mb-2 mb-md-0">
                                     <select class="custom-select">
                                         <option selected>2020-11-20</option>
                                         <option value="20201121">2020-11-21</option>
@@ -59,10 +59,10 @@
                                         <option value="20201123">2020-11-23</option>
                                     </select>
                                 </div>
-                                <div class="col-3 d-flex align-items-center">
+                                <div class="col-3 col-md-1 d-flex justify-content-center align-items-center mb-2 mb-md-0">
                                     <span class="px-2">至</span>
                                 </div>
-                                <div class="col-9 col-md-5">
+                                <div class="col-9 col-md-4">
                                     <select class="custom-select">
                                         <option selected>2020-11-21</option>
                                         <option value="20201122">2020-11-22</option>
@@ -106,8 +106,8 @@
                 </div>
             </div>
             <div class="d-xl-flex justify-content-between">
-                <ul class="flex-grow-1 list-unstyled reservation-flow text-center mb-md-9 mb-xl-0 mr-xl-7 d-none d-md-flex">
-                    <li class="flex-grow-1 py-2 border-top border-tertiary border-thick">
+                <ul class="flex-grow-1 list-unstyled reservation-flow text-center mb-md-9 mb-xl-0 mr-xl-7 d-none d-md-flex text-black">
+                    <li class="flex-grow-1 py-2 border-top border-tertiary border-thick current">
                         預約項目
                     </li>
                     <li class="flex-grow-1 py-2 border-top border-tertiary border-thick">
@@ -119,11 +119,15 @@
                 </ul>
                 <div class="d-md-flex justify-content-md-end">
                     <button type="button" class="btn w-100 d-md-none text-">返回</button>
-                    <button type="button" class="btn btn-tertiary modal-btn-next" data-dismiss="modal" data-toggle="modal" data-target="#reservationSuccess">下一步</button>
+                    <button type="button" class="btn btn-tertiary modal-btn-next" data-dismiss="modal" data-toggle="modal" data-target="#modalReservationInfo">下一步</button>
                 </div>
             </div>
         </div>
     </div>
   </div>
+
+<%- include('modal-reservation-info.ejs') %>
+
+<%- include('modal-reservation-payment.ejs') %>
 
 <%- include('modal-reservation-success.ejs') %>
